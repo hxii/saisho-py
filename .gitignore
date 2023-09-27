@@ -1,0 +1,24 @@
+# log
+*.log
+log/
+
+*.conf
+.DS_Store
+
+# Source and HTML files
+html/
+source/
+template/
+
+# Devenv
+__pycache__/
+**/.vscode/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

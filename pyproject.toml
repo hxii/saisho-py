@@ -1,0 +1,47 @@
+[tool.poetry]
+name = "saisho"
+version = "0.1.0"
+description = ""
+authors = ["Paul Glushak <episodex@gmail.com>"]
+readme = "README.md"
+
+packages = [{ include = "saisho" }]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Markdown = "^3.4.3"
+click = "^8.1.3"
+colorama = "^0.4.6"
+ibis = "^3.2.0"
+python-slugify = "^8.0.1"
+mdx-unimoji = "^1.1"
+markdown-mark = "^0.0.1"
+yafg = "^0.3"
+markdown-del-ins = "^1.0.0"
+minify-html = "^0.11.1"
+
+[tool.poetry.scripts]
+sai = "saisho.main:cli"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.263"
+pytest = "^7.3.1"
+black = "^23.3.0"
+
+[tool.black]
+line-length = 120
+
+[tool.ruff]
+line-length = 120  # defaults to 88 like black
+target-version = "py311"
+
+select = [
+  "E",   # pycodestyle
+  "F",   # pyflakes
+  "UP",  # pyupgrade,
+  "I",   # isort
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

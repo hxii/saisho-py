@@ -1,0 +1,6 @@
+[ssh]
+user = user
+pass = password
+key = ~/.ssh/pubkey.pub
+host = 127.0.0.1
+path = /var/www/website/htdocs
